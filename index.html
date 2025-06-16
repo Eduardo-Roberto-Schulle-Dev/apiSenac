@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Plataforma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="navbar">
+            <img src="logo.png" alt="SenacCursos" class="logo">
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Unidades</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Para empresa</a></li>
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="redes-sociais">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fas fa-rss"></i></a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <h1>Cursos <br><span>Técnicos</span></h1>
+            <p>Quem faz, se dá bem</p>
+            <div class="desconto">20%<br><small>desconto para comerciários</small></div>
+            <p class="modalidade">Opções presenciais e EaD</p>
+            <a href="#" class="cta">Inscreva-se já!</a>
+        </div>
+    </header>
+
+    <main class="inscricoes">
+        <h2>Inscrições Abertas</h2>
+        <div class="cursos">
+            <div class="curso-card">
+                <h3>Curso Livre</h3>
+                <p><strong>Técnicas de Cozinha: Salgados e Doces<br>(mães nas massas)</strong></p>
+                <p>Início: 04/07/2025</p>
+                <p>Campos Novos</p>
+            </div>
+
+            <div class="curso-card">
+                <h3>Técnico</h3>
+                <p><strong>Técnico em Enfermagem</strong></p>
+                <p>Início: 10/07/2025</p>
+                <p>Jaraguá do Sul</p>
+            </div>
+
+            <div class="curso-card">
+                <h3>Graduação</h3>
+                <p><strong>Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</strong></p>
+                <p>Início: 28/07/2025</p>
+                <p>Criciúma</p>
+            </div>
+
+            <div class="curso-card">
+                <h3>Pós-Graduação</h3>
+                <p><strong>Lato Sensu em Gerenciamento de Projetos</strong></p>
+                <p>Início: 15/08/2025</p>
+                <p>Palhoça</p>
+            </div>
+
+            <div class="curso-card">
+                <h3>Especialização Técnica</h3>
+                <p><strong>Especialização Técnica em Meio Ambiente</strong></p>
+                <p>Início: 04/07/2025</p>
+                <p>Jaraguá do Sul</p>
+            </div>
+        </div>
+    </main>
+    <!-- Botão de Chatbot -->
+    <button id="chatbotBtn" onclick="toggleChatbot()">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Janela do Chatbot -->
+    <div id="chatbot">
+        <div class="chat-header">
+            <span> Atendimento Senac </span>
+            <span class="close-btn" onclick="toggleChatbot()">&times;</span>
+
+        </div>
+        <div class="chat-body">
+            <div class="msg bot">Olá! 👋 Como posso te ajudar hoje?</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="userInput" placeholder="Digite sua mensagem..." />
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
